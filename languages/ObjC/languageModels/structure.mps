@@ -122,7 +122,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7BWT4XX8jk6">
-    <property role="3GE5qa" value="statement" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="ObjCClass" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Class" />

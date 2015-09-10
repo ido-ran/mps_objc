@@ -24,6 +24,7 @@
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -123,9 +124,9 @@
   </node>
   <node concept="1TIwiD" id="7BWT4XX8jk6">
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="ObjCClass" />
+    <property role="TrG5h" value="ObjCClassImplementation" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="Class" />
+    <property role="34LRSv" value="implementation" />
     <ref role="1TJDcQ" node="7BWT4XX8rK4" resolve="ObjCType" />
     <node concept="1TJgyj" id="7BWT4XX8oFz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -197,7 +198,55 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7BWT4XX8jk6" resolve="ObjCClass" />
+      <ref role="20lvS9" node="7BWT4XX8jk6" resolve="ObjCClassImplementation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3It58thbHB$">
+    <property role="TrG5h" value="ObjCClassInterface" />
+    <property role="34LRSv" value="interface" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="interface part of a ObjC class" />
+    <ref role="1TJDcQ" node="7$axvEaM8PE" resolve="ObjCNode" />
+    <node concept="1TJgyj" id="3It58thcZq1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3It58thbSxH" resolve="ObjCFunctionHeaderDeclaration" />
+    </node>
+    <node concept="PrWs8" id="3It58thd0It" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3It58thbSxH">
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="ObjCFunctionHeaderDeclaration" />
+    <ref role="1TJDcQ" node="7$axvEaM8PE" resolve="ObjCNode" />
+    <node concept="1TJgyj" id="3It58thbYOK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="returnType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7BWT4XX8rK4" resolve="ObjCType" />
+    </node>
+    <node concept="1TJgyj" id="3It58thbYOL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nameParts" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7BWT4XX8rJ2" resolve="ObjCNamePart" />
+    </node>
+    <node concept="1TJgyi" id="3It58thbYOz" role="1TKVEl">
+      <property role="TrG5h" value="membership" />
+      <ref role="AX2Wp" node="7BWT4XX8EHf" resolve="FunctionMembership" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3It58thcXiB">
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="ObjCFunctionHeaderDeclarationReference" />
+    <ref role="1TJDcQ" node="7$axvEaM8PE" resolve="ObjCNode" />
+    <node concept="1TJgyj" id="3It58thcXj0" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="functionHeader" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3It58thbSxH" resolve="ObjCFunctionHeaderDeclaration" />
     </node>
   </node>
 </model>

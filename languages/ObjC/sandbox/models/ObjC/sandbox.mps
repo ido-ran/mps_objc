@@ -10,6 +10,7 @@
   </imports>
   <registry>
     <language id="dc8b1bcc-621d-49b7-8ce0-d56f11d7a8f6" name="ObjC">
+      <concept id="8790151602773277700" name="ObjC.structure.ObjCType" flags="ng" index="4Rlxb" />
       <concept id="8790151602773277634" name="ObjC.structure.ObjCNamePart" flags="ng" index="4RlYd">
         <property id="8790151602773277662" name="name" index="4RlYh" />
         <property id="8790151602773277672" name="paramName" index="4RlYB" />
@@ -17,6 +18,13 @@
       </concept>
       <concept id="8790151602773243142" name="ObjC.structure.ObjCClass" flags="ng" index="4Rt59">
         <child id="8790151602773265123" name="functionDeclarations" index="4RmUG" />
+      </concept>
+      <concept id="4295612190996531309" name="ObjC.structure.ObjCFunctionHeaderDeclaration" flags="ng" index="1EGDNE">
+        <child id="4295612190996557105" name="nameParts" index="1EGJAQ" />
+        <child id="4295612190996557104" name="returnType" index="1EGJAR" />
+      </concept>
+      <concept id="4295612190996486628" name="ObjC.structure.ObjCInterface" flags="ng" index="1EGWPz">
+        <child id="4295612190996821633" name="members" index="1EFI86" />
       </concept>
       <concept id="794025958115694660" name="ObjC.structure.ObjCClassReference" flags="ng" index="3GU2Cy">
         <reference id="794025958115694661" name="type" index="3GU2Cz" />
@@ -57,6 +65,41 @@
         </node>
       </node>
       <node concept="3NKKch" id="G4WArBU3UQ" role="3NLXjf" />
+    </node>
+  </node>
+  <node concept="1EGWPz" id="3It58thcZpC">
+    <property role="TrG5h" value="ABTestInterface" />
+    <node concept="1EGDNE" id="3It58thd1NL" role="1EFI86">
+      <node concept="4RlYd" id="3It58thd1NM" role="1EGJAQ">
+        <property role="4RlYh" value="init" />
+        <property role="4RlYB" value="a" />
+        <node concept="3GU2Cy" id="3It58thd1NX" role="4RlYy">
+          <ref role="3GU2Cz" to="j0ot:G4WArBVyu7" resolve="NSNumber" />
+        </node>
+      </node>
+      <node concept="4RlYd" id="3It58thd1O1" role="1EGJAQ">
+        <property role="4RlYh" value="with" />
+        <property role="4RlYB" value="b" />
+        <node concept="3GU2Cy" id="3It58thd1Ob" role="4RlYy">
+          <ref role="3GU2Cz" to="j0ot:G4WArBV$Xg" resolve="NSString" />
+        </node>
+      </node>
+      <node concept="3GU2Cy" id="3It58thd1Of" role="1EGJAR">
+        <ref role="3GU2Cz" node="7BWT4XX8rIM" resolve="ABTest" />
+      </node>
+    </node>
+    <node concept="1EGDNE" id="3It58thdexM" role="1EFI86">
+      <node concept="4RlYd" id="3It58thdexN" role="1EGJAQ">
+        <property role="4RlYh" value="a" />
+        <property role="4RlYB" value="c" />
+        <node concept="4Rlxb" id="3It58thdexO" role="4RlYy" />
+      </node>
+      <node concept="4Rlxb" id="3It58thdexP" role="1EGJAR" />
+      <node concept="4RlYd" id="3It58thdgNc" role="1EGJAQ">
+        <property role="4RlYh" value="d" />
+        <property role="4RlYB" value="d" />
+        <node concept="4Rlxb" id="3It58thdgNd" role="4RlYy" />
+      </node>
     </node>
   </node>
 </model>

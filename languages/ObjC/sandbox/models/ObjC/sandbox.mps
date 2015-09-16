@@ -16,14 +16,15 @@
         <property id="8790151602773277672" name="paramName" index="4RlYB" />
         <child id="8790151602773277677" name="type" index="4RlYy" />
       </concept>
-      <concept id="8790151602773243142" name="ObjC.structure.ObjCClass" flags="ng" index="4Rt59">
+      <concept id="8790151602773243142" name="ObjC.structure.ObjCClassImplementation" flags="ng" index="4Rt59">
         <child id="8790151602773265123" name="functionDeclarations" index="4RmUG" />
       </concept>
       <concept id="4295612190996531309" name="ObjC.structure.ObjCFunctionHeaderDeclaration" flags="ng" index="1EGDNE">
         <child id="4295612190996557105" name="nameParts" index="1EGJAQ" />
         <child id="4295612190996557104" name="returnType" index="1EGJAR" />
       </concept>
-      <concept id="4295612190996486628" name="ObjC.structure.ObjCInterface" flags="ng" index="1EGWPz">
+      <concept id="4295612190996486628" name="ObjC.structure.ObjCClassInterface" flags="ng" index="1EGWPz">
+        <reference id="8999834647297806387" name="parent" index="39_onu" />
         <child id="4295612190996821633" name="members" index="1EFI86" />
       </concept>
       <concept id="794025958115694660" name="ObjC.structure.ObjCClassReference" flags="ng" index="3GU2Cy">
@@ -69,6 +70,7 @@
   </node>
   <node concept="1EGWPz" id="3It58thcZpC">
     <property role="TrG5h" value="ABTestInterface" />
+    <ref role="39_onu" node="3It58thcZpC" resolve="ABTestInterface" />
     <node concept="1EGDNE" id="3It58thd1NL" role="1EFI86">
       <node concept="4RlYd" id="3It58thd1NM" role="1EGJAQ">
         <property role="4RlYh" value="init" />
@@ -80,8 +82,8 @@
       <node concept="4RlYd" id="3It58thd1O1" role="1EGJAQ">
         <property role="4RlYh" value="with" />
         <property role="4RlYB" value="b" />
-        <node concept="3GU2Cy" id="3It58thd1Ob" role="4RlYy">
-          <ref role="3GU2Cz" to="j0ot:G4WArBV$Xg" resolve="NSString" />
+        <node concept="3GU2Cy" id="7N_PuQPter4" role="4RlYy">
+          <ref role="3GU2Cz" to="j0ot:7N_PuQPtcfs" resolve="NSString" />
         </node>
       </node>
       <node concept="3GU2Cy" id="3It58thd1Of" role="1EGJAR">

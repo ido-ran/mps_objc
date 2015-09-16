@@ -181,12 +181,12 @@
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="7BWT4XX8EHg" role="M5hS2">
       <property role="2fHolG" value="static" />
-      <property role="1uS6qv" value="static" />
+      <property role="1uS6qv" value="+" />
       <property role="1uS6qo" value="+" />
     </node>
     <node concept="M4N5e" id="7BWT4XX8EHG" role="M5hS2">
       <property role="2fHolG" value="instance" />
-      <property role="1uS6qv" value="instance" />
+      <property role="1uS6qv" value="-" />
       <property role="1uS6qo" value="-" />
     </node>
   </node>
@@ -198,7 +198,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7BWT4XX8jk6" resolve="ObjCClassImplementation" />
+      <ref role="20lvS9" node="3It58thbHB$" resolve="ObjCClassInterface" />
     </node>
   </node>
   <node concept="1TIwiD" id="3It58thbHB$">
@@ -207,6 +207,12 @@
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="interface part of a ObjC class" />
     <ref role="1TJDcQ" node="7$axvEaM8PE" resolve="ObjCNode" />
+    <node concept="1TJgyj" id="7N_PuQPs50N" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="parent" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3It58thbHB$" resolve="ObjCClassInterface" />
+    </node>
     <node concept="1TJgyj" id="3It58thcZq1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />

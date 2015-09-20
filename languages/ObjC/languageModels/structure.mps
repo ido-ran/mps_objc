@@ -255,5 +255,14 @@
       <ref role="20lvS9" node="3It58thbSxH" resolve="ObjCFunctionHeaderDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5hee0tkJUi_">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="ObjCNativeType" />
+    <ref role="1TJDcQ" node="7BWT4XX8rK4" resolve="ObjCType" />
+    <node concept="1TJgyi" id="5hee0tkJUD_" role="1TKVEl">
+      <property role="TrG5h" value="typeName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

@@ -240,5 +240,15 @@
       <node concept="l2Vlx" id="3It58thd3ik" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5hee0tkJUEl">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="bxi1:5hee0tkJUi_" resolve="ObjCNativeType" />
+    <node concept="3EZMnI" id="5hee0tkK2nE" role="2wV5jI">
+      <node concept="3F0A7n" id="5hee0tkK2nR" role="3EZMnx">
+        <ref role="1NtTu8" to="bxi1:5hee0tkJUD_" resolve="typeName" />
+      </node>
+      <node concept="l2Vlx" id="5hee0tkK2nH" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

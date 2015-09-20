@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="dc8b1bcc-621d-49b7-8ce0-d56f11d7a8f6" name="ObjC">
+      <concept id="6074854551507149989" name="ObjC.structure.ObjCNativeType" flags="ng" index="0WpMy">
+        <property id="6074854551507151461" name="typeName" index="0Wp9y" />
+      </concept>
       <concept id="8790151602773277743" name="ObjC.structure.ObjCVoidType" flags="ng" index="4Rlxw" />
       <concept id="8790151602773277634" name="ObjC.structure.ObjCNamePart" flags="ng" index="4RlYd">
         <property id="8790151602773277662" name="name" index="4RlYh" />
@@ -14,6 +17,7 @@
         <child id="8790151602773277677" name="type" index="4RlYy" />
       </concept>
       <concept id="4295612190996531309" name="ObjC.structure.ObjCFunctionHeaderDeclaration" flags="ng" index="1EGDNE">
+        <property id="4295612190996557091" name="membership" index="1EGJA$" />
         <child id="4295612190996557105" name="nameParts" index="1EGJAQ" />
         <child id="4295612190996557104" name="returnType" index="1EGJAR" />
       </concept>
@@ -61,6 +65,19 @@
         </node>
       </node>
       <node concept="4Rlxw" id="7N_PuQPt_dK" role="1EGJAR" />
+    </node>
+    <node concept="1EGDNE" id="5hee0tkJSAT" role="1EFI86">
+      <property role="1EGJA$" value="-" />
+      <node concept="4RlYd" id="5hee0tkJSAU" role="1EGJAQ">
+        <property role="4RlYh" value="getObjectAt" />
+        <property role="4RlYB" value="index" />
+        <node concept="0WpMy" id="5hee0tkKymt" role="4RlYy">
+          <property role="0Wp9y" value="int" />
+        </node>
+      </node>
+      <node concept="3GU2Cy" id="5hee0tkJSBr" role="1EGJAR">
+        <ref role="3GU2Cz" node="7N_PuQPter8" resolve="NSObject" />
+      </node>
     </node>
   </node>
 </model>
